@@ -1,0 +1,685 @@
+/* ==========================================
+   SHOPBLESS BIRTHDAY JOURNEY
+   STAGE 3
+   BLACK + PINK
+========================================== */
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+
+    min-height: 100vh;
+
+    background:
+
+        radial-gradient(circle at top,
+            #351326 0%,
+            #160b12 35%,
+            #080808 75%);
+
+    color: #fff;
+
+    overflow-x: hidden;
+
+}
+
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+.background {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+.pink-glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: .25;
+
+}
+
+
+.glow-one {
+
+    width: 300px;
+
+    height: 300px;
+
+    background: #ff1493;
+
+    top: 5%;
+
+    left: -100px;
+
+}
+
+
+.glow-two {
+
+    width: 350px;
+
+    height: 350px;
+
+    background: #ff4da6;
+
+    bottom: -150px;
+
+    right: -100px;
+
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.birthday-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 70px 20px 30px;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================
+   TOP LABEL
+========================================== */
+
+.top-label {
+
+    color: #ff72b6;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+h1 {
+
+    font-size: clamp(2.5rem,
+            7vw,
+            5rem);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+}
+
+
+h1::after {
+
+    content: " 💗";
+
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.message {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #ddd;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+}
+
+
+.message p {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* ==========================================
+   STAGE CARD
+========================================== */
+
+.stage-card {
+
+    margin-top: 45px;
+
+    background:
+
+        linear-gradient(145deg,
+            rgba(255, 255, 255, .08),
+            rgba(255, 255, 255, .025));
+
+    border: 1px solid rgba(255, 77, 166, .3);
+
+    border-radius: 25px;
+
+    padding: 40px 30px;
+
+    box-shadow:
+
+        0 20px 60px rgba(0, 0, 0, .45),
+
+        0 0 30px rgba(255, 77, 166, .08);
+
+    backdrop-filter: blur(15px);
+
+}
+
+
+/* ==========================================
+   STAGE NUMBER
+========================================== */
+
+.stage-number {
+
+    display: inline-block;
+
+    padding: 7px 18px;
+
+    border: 1px solid #ff4da6;
+
+    border-radius: 30px;
+
+    color: #ff72b6;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.lock-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 77, 166, .12);
+
+    border: 1px solid rgba(255, 77, 166, .4);
+
+    font-size: 28px;
+
+    box-shadow:
+
+        0 0 25px rgba(255, 77, 166, .2);
+
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.stage-card h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.question-intro {
+
+    color: #bbb;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ==========================================
+   QUESTION BOX
+========================================== */
+
+.question-box {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background:
+
+        rgba(0, 0, 0, .25);
+
+    border-radius: 18px;
+
+}
+
+
+/* ==========================================
+   QUESTION
+========================================== */
+
+.question {
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.missing {
+
+    display: inline-block;
+
+    color: #ff4da6;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* ==========================================
+   HINT
+========================================== */
+
+.hint {
+
+    color: #ff72b6;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+#answerInput {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+
+    background:
+        rgba(255, 255, 255, .07);
+
+    color: #fff;
+
+    font-size: 16px;
+
+    outline: none;
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+
+#answerInput::placeholder {
+
+    color: #888;
+
+}
+
+
+#answerInput:focus {
+
+    border-color: #ff4da6;
+
+    box-shadow:
+
+        0 0 20px rgba(255, 77, 166, .2);
+
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+#submitAnswer,
+#continueButton {
+
+    margin-top: 18px;
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+
+        linear-gradient(135deg,
+            #ff1493,
+            #ff4da6);
+
+    color: #fff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow:
+
+        0 8px 25px rgba(255, 20, 147, .25);
+
+}
+
+
+#submitAnswer:hover,
+#continueButton:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+
+        0 12px 30px rgba(255, 20, 147, .4);
+
+}
+
+
+/* ==========================================
+   FEEDBACK
+========================================== */
+
+.feedback {
+
+    min-height: 25px;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+}
+
+
+.feedback.error {
+
+    color: #ff6b9f;
+
+}
+
+
+.feedback.success {
+
+    color: #7dffb2;
+
+}
+
+
+/* ==========================================
+   SUCCESS CARD
+========================================== */
+
+.success-card {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 45px 30px;
+
+    background:
+
+        linear-gradient(145deg,
+            rgba(255, 20, 147, .14),
+            rgba(255, 255, 255, .04));
+
+    border: 1px solid rgba(255, 77, 166, .4);
+
+    border-radius: 25px;
+
+    box-shadow:
+
+        0 20px 60px rgba(0, 0, 0, .4);
+
+}
+
+
+.success-heart {
+
+    font-size: 55px;
+
+    margin-bottom: 20px;
+
+    animation:
+        heartbeat 1.2s infinite;
+
+}
+
+
+.success-card h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.success-card p {
+
+    color: #ccc;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    margin-top: 60px;
+
+    padding: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+}
+
+
+@keyframes shake {
+
+    0%,
+    100% {
+
+        transform: translateX(0);
+
+    }
+
+    25% {
+
+        transform: translateX(-8px);
+
+    }
+
+    50% {
+
+        transform: translateX(8px);
+
+    }
+
+    75% {
+
+        transform: translateX(-5px);
+
+    }
+
+}
+
+
+.shake {
+
+    animation:
+        shake .4s ease;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px) {
+
+    .birthday-container {
+
+        padding-top: 45px;
+
+    }
+
+
+    .stage-card {
+
+        padding: 30px 18px;
+
+    }
+
+
+    .stage-card h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .question {
+
+        font-size: 18px;
+
+    }
+
+
+    .message {
+
+        font-size: 15px;
+
+    }
+
+}
