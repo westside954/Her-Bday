@@ -13,7 +13,7 @@
 //
 // =====================================
 
-const stage2Unlocked = true;
+const stage2Unlocked = false;
 
 
 // =====================================
